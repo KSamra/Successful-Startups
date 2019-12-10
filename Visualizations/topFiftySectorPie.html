@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="34a533d9-e666-45bf-ae4b-91a9637b90df" data-root-id="1356"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1479">
+          {"271b08b8-9d3c-4946-a2eb-ec090468baef":{"roots":{"references":[{"attributes":{"grid_line_color":null,"ticker":{"id":"1368","type":"BasicTicker"}},"id":"1371","type":"Grid"},{"attributes":{"label":{"field":"Sectors"},"renderers":[{"id":"1386","type":"GlyphRenderer"}]},"id":"1394","type":"LegendItem"},{"attributes":{},"id":"1400","type":"UnionRenderers"},{"attributes":{"source":{"id":"1382","type":"ColumnDataSource"}},"id":"1387","type":"CDSView"},{"attributes":{"callback":null,"tooltips":"@Sectors: @Total_Amount_Invested"},"id":"1377","type":"HoverTool"},{"attributes":{},"id":"1363","type":"LinearScale"},{"attributes":{"axis_label":null,"formatter":{"id":"1389","type":"BasicTickFormatter"},"ticker":{"id":"1368","type":"BasicTicker"},"visible":false},"id":"1367","type":"LinearAxis"},{"attributes":{},"id":"1389","type":"BasicTickFormatter"},{"attributes":{"callback":null,"data":{"Sectors":["Other","E-Commerce","Software","Mobile","Internet","Enterprise Software","Technology","Semiconductors","Social Media","Advertising","Travel","Biotechnology","Finance","Analytics","Clean Technology","Curated Web","Security","Retail","Health Care","SaaS"],"Total_Amount_Invested":{"__ndarray__":"sicczKf4UUJq3+5cAOwqQl7TdVIhSSpCCIsql1IDKEIAAFBknmwkQkChoXttJyJCnKu54C98GkIAAEgir+sZQvsE5zpsShhCAAA8toTIFULgQPlgpNMUQjZkXJPeBBNCndpvmq1SEkIAACTpSiUQQgAADDCEIRBC9gm+0fnRD0IAAPDWKEALQnCjvDNEJgtCAADYzianCUIAABhEuBoHQg==","dtype":"float64","shape":[20]},"angle":{"__ndarray__":"t38a5OCiAkD3k8ztAOvbP0NmwC4bQts/Ph8YnMXm2D9E57aCEy7VP+VSjplh09I/8BRtWA13yz9JID7hM+HKPyDug7SAMMk/KXzWHNmWxj86v/lT6ZjFPywqfiwEucM/HU+6YjsAwz/ZUPQsOb7APxFUIK9OusA/PsX++K9/wD/sk5yLRkK8P8j8aKZsJ7w/rX4mayKauj/lbE8WkPW3Pw==","dtype":"float64","shape":[20]},"color":["#3182bd","#6baed6","#9ecae1","#c6dbef","#e6550d","#fd8d3c","#fdae6b","#fdd0a2","#31a354","#74c476","#a1d99b","#c7e9c0","#756bb1","#9e9ac8","#bcbddc","#dadaeb","#636363","#969696","#bdbdbd","#d9d9d9"],"index":[50,3,0,1,12,4,13,24,8,6,32,2,11,9,18,5,20,37,7,10]},"selected":{"id":"1401","type":"Selection"},"selection_policy":{"id":"1400","type":"UnionRenderers"}},"id":"1382","type":"ColumnDataSource"},{"attributes":{},"id":"1365","type":"LinearScale"},{"attributes":{"dimension":1,"grid_line_color":null,"ticker":{"id":"1373","type":"BasicTicker"}},"id":"1376","type":"Grid"},{"attributes":{},"id":"1368","type":"BasicTicker"},{"attributes":{},"id":"1401","type":"Selection"},{"attributes":{"below":[{"id":"1367","type":"LinearAxis"}],"center":[{"id":"1371","type":"Grid"},{"id":"1376","type":"Grid"},{"id":"1393","type":"Legend"}],"left":[{"id":"1372","type":"LinearAxis"}],"renderers":[{"id":"1386","type":"GlyphRenderer"}],"title":{"id":"1357","type":"Title"},"toolbar":{"id":"1378","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"1359","type":"Range1d"},"x_scale":{"id":"1363","type":"LinearScale"},"y_range":{"id":"1361","type":"DataRange1d"},"y_scale":{"id":"1365","type":"LinearScale"}},"id":"1356","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"start":-0.5},"id":"1359","type":"Range1d"},{"attributes":{"items":[{"id":"1394","type":"LegendItem"}]},"id":"1393","type":"Legend"},{"attributes":{"field":"angle"},"id":"1381","type":"CumSum"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1377","type":"HoverTool"}]},"id":"1378","type":"Toolbar"},{"attributes":{"text":"Investment Distribution of Top 50 VCs"},"id":"1357","type":"Title"},{"attributes":{"callback":null},"id":"1361","type":"DataRange1d"},{"attributes":{},"id":"1391","type":"BasicTickFormatter"},{"attributes":{"field":"angle","include_zero":true},"id":"1380","type":"CumSum"},{"attributes":{"end_angle":{"expr":{"id":"1381","type":"CumSum"},"units":"rad"},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"radius":{"units":"data","value":0.4},"start_angle":{"expr":{"id":"1380","type":"CumSum"},"units":"rad"},"x":{"value":0},"y":{"value":1}},"id":"1385","type":"Wedge"},{"attributes":{},"id":"1373","type":"BasicTicker"},{"attributes":{"end_angle":{"expr":{"id":"1381","type":"CumSum"},"units":"rad"},"fill_color":{"field":"color"},"line_color":{"value":"white"},"radius":{"units":"data","value":0.4},"start_angle":{"expr":{"id":"1380","type":"CumSum"},"units":"rad"},"x":{"value":0},"y":{"value":1}},"id":"1384","type":"Wedge"},{"attributes":{"data_source":{"id":"1382","type":"ColumnDataSource"},"glyph":{"id":"1384","type":"Wedge"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1385","type":"Wedge"},"selection_glyph":null,"view":{"id":"1387","type":"CDSView"}},"id":"1386","type":"GlyphRenderer"},{"attributes":{"axis_label":null,"formatter":{"id":"1391","type":"BasicTickFormatter"},"ticker":{"id":"1373","type":"BasicTicker"},"visible":false},"id":"1372","type":"LinearAxis"}],"root_ids":["1356"]},"title":"Bokeh Application","version":"1.4.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1479').textContent;
+                  var render_items = [{"docid":"271b08b8-9d3c-4946-a2eb-ec090468baef","roots":{"1356":"34a533d9-e666-45bf-ae4b-91a9637b90df"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
